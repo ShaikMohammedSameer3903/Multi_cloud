@@ -1,0 +1,13 @@
+/**
+ * Dynamic Environment Configuration & API Auto-Discovery
+ */
+
+// In production: use VITE_API_URL if set, otherwise use Render backend URL
+// The backend is deployed separately on Render; the frontend is on Vercel.
+export const API_BASE_URL =
+  import.meta.env.VITE_API_URL ||
+  (import.meta.env.PROD
+    ? 'https://azure-cloudops-api.onrender.com'
+    : 'http://localhost:3001');
+
+export const CURRENT_ENV = import.meta.env.DEV ? 'Development' : 'Production';
