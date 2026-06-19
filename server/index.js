@@ -73,7 +73,7 @@ const allowedOrigins = [
   'http://localhost:5174',
   'https://localhost:5174',
   'https://azure-cloud-ops-git-main-shaik-mohammed-sameers-projects.vercel.app',
-  'https://azure-cloud-ops.vercel.app'
+  'https://multi-cloud-ten.vercel.app'
 ];
 if (process.env.ALLOWED_ORIGINS) {
   const envOrigins = process.env.ALLOWED_ORIGINS.split(',').map(o => o.trim()).filter(Boolean);

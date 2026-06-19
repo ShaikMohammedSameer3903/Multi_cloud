@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 Disallow: /admin
 Disallow: /api/
-Sitemap: https://azure-cloud-ops.vercel.app/sitemap.xml
+Sitemap: https://multi-cloud-ten.vercel.app/sitemap.xml

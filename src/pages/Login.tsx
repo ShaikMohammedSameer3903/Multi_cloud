@@ -159,17 +159,17 @@ export default function Login() {
   const [activeTab, setActiveTab] = useState<'azure' | 'aws' | 'admin'>('azure');
 
   // Vercel Preview Auto-Redirection
-  const productionDomain = import.meta.env.VITE_PRODUCTION_DOMAIN || import.meta.env.VITE_APP_URL || 'https://azure-cloud-ops.vercel.app';
+  const productionDomain = import.meta.env.VITE_PRODUCTION_DOMAIN || import.meta.env.VITE_APP_URL || 'https://multi-cloud-ten.vercel.app';
   const currentOrigin = window.location.origin;
   const isRegisteredOrigin = 
     currentOrigin.includes('localhost') || 
     currentOrigin.includes('127.0.0.1') ||
-    currentOrigin === 'https://azure-cloud-ops.vercel.app' || 
+    currentOrigin === 'https://multi-cloud-ten.vercel.app' || 
     currentOrigin === 'https://azure-cloud-ops-git-main-shaik-mohammed-sameers-projects.vercel.app';
 
   const currentEnv = currentOrigin.includes('localhost') || currentOrigin.includes('127.0.0.1')
     ? 'Local Development'
-    : currentOrigin === 'https://azure-cloud-ops.vercel.app'
+    : currentOrigin === 'https://multi-cloud-ten.vercel.app'
       ? 'Production'
       : 'Preview Deployment';
 
@@ -365,7 +365,7 @@ export default function Login() {
 
                     <div style={{ marginTop: 10, display: 'flex', flexDirection: 'column', gap: 8 }}>
                       <a 
-                        href={`https://azure-cloud-ops.vercel.app${location.pathname}${location.search}`}
+                        href={`https://multi-cloud-ten.vercel.app${location.pathname}${location.search}`}
                         style={{ color: '#60a5fa', textDecoration: 'underline', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: 4 }}
                       >
                         Go to Production Domain <ExternalLink size={12} />
